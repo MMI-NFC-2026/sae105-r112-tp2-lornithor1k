@@ -1,39 +1,38 @@
 .menu {
-  width: 100%;
-  height: 100%;
-  border: 0;
+  width: 100%; /* Hauteur : 100% du parent */
+  height: 100%; /* Largeur : 100% du parent */
+  border: 0; /* pas de bordure ( épaisseur */
 }
 html:has(.menu:popover-open) {
-  overflow: hidden;
+  overflow: hidden;    /* Permet le scroll du contenue même quand le menu est ouvert */
 }
 .burger {
-  cursor: pointer;
+  cursor: pointer; /* rend le curseur en forme de main */
 }
 .menu {
-  transition: 400ms allow-discrete;
-  opacity: 0;
+  transition: 400ms allow-discrete;/* Transition de 400 ms sur le menu */
+  opacity: 0;/* opacité initiale ( modifiable) */
 }
-
 .menu:popover-open {
-  opacity: 1;
+  opacity: 1; /* opacité lorsque le menu est ouvert */
 }
 
 @starting-style {
-  .menu:popover-open {
-    opacity: 0;
+  .menu:popover-open { /* Règle de style de départ pour le menu lorsqu'il est ouvert */
+    opacity: 0; 
   }
 }
-@starting-style {
+@starting-style { /*maintient le bouton au même endroit pendant l'ouverture du menu */
   .menu:popover-open .burger--close {
     transform: none;
   }
 }
 
-.menu:popover-open .burger--close {
-  transform: rotate(180deg);
-  transition: 3400ms;
+.menu:popover-open .burger--close { /* fait tourner le bouton lors de l'ouverture du menu */
+  transform: rotate(180deg); /* degré de rotation */
+  transition: 3400ms; /* durée de la transition */
 }
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) { /* Permet d'annuler les animations pour les utilisateurs qui le souhaitent */
   .menu,
   .menu .burger--close {
     transition: none;
