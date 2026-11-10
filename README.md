@@ -201,7 +201,13 @@ Ajouter à votre code des commentaires reprenant les explications données dans 
 Recherchez sur le site https://developer.mozilla.org/fr/ les pages de documentation de ce qui a été utilisé dans ce TP :
 
 - `popover` : https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Global_attributes/popover
-- ...
+- `transform` : https://developer.mozilla.org/fr/docs/Web/SVG/Reference/Attribute/transform
+- `opacité (CSS)` : https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/opacity
+- `autofocus` : https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Global_attributes/autofocus
+- `@media CSS` : https://developer.mozilla.org/fr/docs/Web/CSS/Reference/At-rules/@media
+- `Starting-style CSS` : https://developer.mozilla.org/fr/docs/Web/CSS/Reference/At-rules/@starting-style
+- `Overflow` : https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/overflow
+- `Popovertarget` : https://developer.mozilla.org/fr/docs/Web/API/HTMLButtonElement/popoverTargetAction
 
 # Fin
 
